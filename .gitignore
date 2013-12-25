@@ -1,0 +1,7 @@
+CVS
+.svn
+junk*
+dist-files
+distribution
+target
+*.log
