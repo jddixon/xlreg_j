@@ -1,5 +1,9 @@
 xlreg_py/TODO
 
+2013-12-25
+    * review use of ant 1.7
+        - ant is failing to locaet JUnitTask
+
 2013-12-24
     * git remote set-url origin https;//github.com/jddixon/xlreg_j      * DONE
     * need build.xml ant script
