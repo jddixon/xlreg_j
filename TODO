@@ -1,15 +1,15 @@
 xlreg_py/TODO
 
+2014-01-23
+    * need Makefile which copies xlattice_go/reg/p.proto here
+    * and then runs
+            protoc -I $SRC_DIR --java-out=$DST_DIR $SRC_DIR/xxx.proto
+        or rather
+            protoc --java-out=src/java p.proto
+
+
 2013-12-25
-    * review use of ant 1.7
-        - ant is failing to locaet JUnitTask
     * need p.proto 
         - plus Makefile -OR- suitable ant script
     * need working Protobuf generation for Java
 
-2013-12-24
-    * git remote set-url origin https;//github.com/jddixon/xlreg_j      * DONE
-    * need build.xml ant script                                         * DONE
-    * and supporting directories                                        * DONE
-    * edit .gitignore                                                   * DONE
-        - commit                                                        * DONE
