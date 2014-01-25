@@ -1,15 +1,16 @@
 xlreg_py/TODO
 
 2014-01-23
-    * need Makefile which copies xlattice_go/reg/p.proto here
-    * and then runs
-            protoc -I $SRC_DIR --java-out=$DST_DIR $SRC_DIR/xxx.proto
-        or rather
-            protoc --java-out=src/java p.proto
-
+    * need Ant targets which 
+        - copies xlattice_go/reg/p.proto here
+            * must add 'option java_package= "org.xlattice.xlReg"'
+            * must add 'option java_outer_classname= "XLRegProtos"'
+        - and then runs 
+                protoc -I $SRC_DIR --java-out=$DST_DIR $SRC_DIR/xxx.proto
+            or rather
+                protoc --java-out=src/java p.proto
+    * DecimalVersion needs comparison method 
 
 2013-12-25
-    * need p.proto 
-        - plus Makefile -OR- suitable ant script
-    * need working Protobuf generation for Java
+    * need working Protobuf generation for Java                         * DONE
 
