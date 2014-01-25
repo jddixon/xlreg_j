@@ -1,4 +1,4 @@
-// TestDecimalVersion.go
+/* TestDecimalVersion.go */
 
 package org.xlattice.xlReg;
 
@@ -39,52 +39,52 @@ public class TestDecimalVersion extends TestCase {
 	public void test4IntConstructor() {
 		dv = new DecimalVersion(1,2,3,4);
 		String s = dv.toString();
-		assertEquals("1.2.3.4", s)
+		assertEquals("1.2.3.4", s);
 		assertEquals(dv.getA(), 1);
 		assertEquals(dv.getB(), 2);
 		assertEquals(dv.getC(), 3);
 		assertEquals(dv.getD(), 4);
-		dv2 = new DecimalVersion(s)
-		assertTrue(dv.equals(dv2))
+		dv2 = new DecimalVersion(s);
+		assertTrue(dv.equals(dv2));
 	}
 	public void test3IntConstructor() {
 		dv = new DecimalVersion(1,2,3);
 		String s = dv.toString();
-		assertEquals("1.2.3", s)
+		assertEquals("1.2.3", s);
 		assertEquals(dv.getA(), 1);
 		assertEquals(dv.getB(), 2);
 		assertEquals(dv.getC(), 3);
 		assertEquals(dv.getD(), 0);
-		dv2 = new DecimalVersion(s)
-		assertTrue(dv.equals(dv2))
-		dv3 = new DecimalVersion(1,2,3,0)
-		assertTrue(dv.equals(dv3))
+		dv2 = new DecimalVersion(s);
+		assertTrue(dv.equals(dv2));
+		dv3 = new DecimalVersion(1,2,3,0);
+		assertTrue(dv.equals(dv3));
 	}
 	public void test2IntConstructor() {
 		dv = new DecimalVersion(1,2);
 		String s = dv.toString();
-		assertEquals("1.2", s)
+		assertEquals("1.2", s);
 		assertEquals(dv.getA(), 1);
 		assertEquals(dv.getB(), 2);
 		assertEquals(dv.getC(), 0);
 		assertEquals(dv.getD(), 0);
-		dv2 = new DecimalVersion(s)
-		assertTrue(dv.equals(dv2))
-		dv3 = new DecimalVersion(1,2,0,0)
-		assertTrue(dv.equals(dv3))
+		dv2 = new DecimalVersion(s);
+		assertTrue(dv.equals(dv2));
+		dv3 = new DecimalVersion(1,2,0,0);
+		assertTrue(dv.equals(dv3));
 	}
 	public void test1IntConstructor() {
-		dv = new DecimalVersion(1,2);
+		dv = new DecimalVersion(1);
 		String s = dv.toString();
-		assertEquals("1.0", s)
+		assertEquals("1.0", s);
 		assertEquals(dv.getA(), 1);
 		assertEquals(dv.getB(), 0);
 		assertEquals(dv.getC(), 0);
 		assertEquals(dv.getD(), 0);
-		dv2 = new DecimalVersion(s)
-		assertTrue(dv.equals(dv2))
-		dv3 = new DecimalVersion(1,0,0,0)
-		assertTrue(dv.equals(dv3))
+		dv2 = new DecimalVersion(s);
+		assertTrue(dv.equals(dv2));
+		dv3 = new DecimalVersion(1,0,0,0);
+		assertTrue(dv.equals(dv3));
 	}
 }
 

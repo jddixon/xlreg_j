@@ -1,5 +1,10 @@
 xlreg_py/TODO
 
+2014-01-24
+    * DecimalVersion needs comparison method
+        public compareTo(DecimalVersion rhs)
+        returning 0 if same, -1 if before rhs, 1 if after rhs
+
 2014-01-23
     * need Ant targets which 
         - copies xlattice_go/reg/p.proto here
@@ -9,7 +14,6 @@ xlreg_py/TODO
                 protoc -I $SRC_DIR --java-out=$DST_DIR $SRC_DIR/xxx.proto
             or rather
                 protoc --java-out=src/java p.proto
-    * DecimalVersion needs comparison method 
 
 2013-12-25
     * need working Protobuf generation for Java                         * DONE

@@ -101,8 +101,8 @@ public class DecimalVersion {
         int b = this.getB();
         int c = this.getC();
         int d = this.getD();
-        StringBuffer sb = new StringBuffer(a);
-        sb.append(".").append(b);
+        StringBuffer sb = new StringBuffer();
+        sb.append(a).append(".").append(b);
         if (c > 0 || d > 0 )
             sb.append(".").append(c);
         if (d > 0 )
