@@ -1,5 +1,8 @@
 xlreg_py/TODO
 
+2014-02-09
+    * https://www.bouncycastle.org/wiki/display/JA1/Provider+Installation
+
 2014-01-24
     * DecimalVersion needs comparison method
         public compareTo(DecimalVersion rhs)
