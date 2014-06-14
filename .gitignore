@@ -1,2 +1,12 @@
+.committed
+CVS
+dist-files
+distribution
 junk*
+*.log
+.merkle
+.posted
+.svn
 *.swp
+target
+*ZZZ
