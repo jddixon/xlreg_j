@@ -9,4 +9,5 @@ junk*
 .svn
 *.swp
 target
+testData
 *ZZZ
