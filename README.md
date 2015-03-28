@@ -1,5 +1,5 @@
 xlreg_j
-#######
+=======
 
 A Java client for the xlReg cluster registry.  **xlreg_j**
 makes it easy to create new small clusters some or all of whose members are
