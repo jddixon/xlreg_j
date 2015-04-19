@@ -1,9 +1,9 @@
-# xlreg_j
+# xlreg_java
 
-A Java client for the xlReg cluster registry.  **xlreg_j**
+A Java client for the xlReg cluster registry.  **xlreg_java**
 makes it easy to create new small clusters some or all of whose members are
 written in the programming language Java.  
-xlreg_j is expected to be used primarily for testing, where
+xlreg_java is expected to be used primarily for testing, where
 the ability to create and launch new, unique, distinct clusters in seconds
 will be a major advantage.
 
@@ -101,7 +101,7 @@ Cluster members will communicate with one another and clients
 using protocols agreed-upon among themselves, but the xlReg registry
 has no knowledge of such protocols.
 
-**xlreg_j** is currently in development.  This is not
+**xlreg_java** is currently in development.  This is not
 necessarily a description of running code; it is where we are going.
 
 xlReg is an [XLattice](http://jddixon.github.io/xlattice_go/) project.  More
@@ -157,7 +157,7 @@ your own server.
 ## Client Source Code
 
 This is best obtained through
-[this client's Github project page](https://github.com/jddixon/xlreg_j/).
+[this client's Github project page](https://github.com/jddixon/xlreg_java/).
 
 ## Project Status
 

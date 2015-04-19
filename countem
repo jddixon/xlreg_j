@@ -1,0 +1,7 @@
+# xlattice_java/countem
+# 
+pySloc -vC java:bash:txt  \
+    bash:countem    \
+    txt:p.proto     \
+    txt:testDataTestTemplate
+    

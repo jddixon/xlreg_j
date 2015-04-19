@@ -1,5 +1,8 @@
-xlreg_j/TODO
+xlreg_java/TODO
 
+2015-04-18
+    * need to count build.xml
+    * ... and to extract the version from in 
 2014-02-09
     * https://www.bouncycastle.org/wiki/display/JA1/Provider+Installation
 

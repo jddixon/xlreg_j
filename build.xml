@@ -2,8 +2,8 @@
 
 <project default="test" name="util" basedir=".">
 
-  <property name="name"           value="xlreg_j"/>
-  <property name="version"        value="0.1.0"/>
+  <property name="name"           value="xlreg_java"/>
+  <property name="version"        value="0.1.1"/>
   <!-- manual addition -->
   <property name="projectName"    value="xlreg"/>
   <!-- ======================================================= -->
