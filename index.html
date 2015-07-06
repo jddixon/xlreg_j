@@ -9,19 +9,22 @@
 </head>
 <body>
 <div class="content">
-<h1>xlreg_j</h1>
+<h1>xlreg_java</h1>
 
-<p>A Java client for the xlReg cluster registry.  <strong>xlreg_j</strong>
+<p>The Java client for the xlReg cluster registry.</p>
+
+<p><strong>xlreg_java</strong>
 makes it easy to create new small clusters some or all of whose members are
 written in the programming language Java.<br />
-xlreg_j is expected to be used primarily for testing, where
+xlreg_java is expected to be used primarily for testing, where
 the ability to create and launch new, unique, distinct clusters in seconds
 will be a major advantage.</p>
 
 <p>In such a cluster, members use the <strong>xlReg</strong> public server to register and
 exchange member IP addresses.  When a member finishes booting, it has
-learned the IP addresses of its peers and the RSA keys used to encrypt
-traffic between members and traffic between cluster members and clients.</p>
+learned the IP addresses of its peers and the RSA keys used to set up
+encrypted communications
+between members of the cluster and between cluster members and clients.</p>
 
 <h2>The xlReg Service</h2>
 
@@ -36,7 +39,7 @@ about existing clusters.</p>
 which cooperate as a set of intercommunicating servers.  Each
 such server has two RSA keys.  One, the <strong>sig</strong> key, is used for creating
 digital signatures.  The other, the <strong>comms</strong> key, is used for encrypting
-communications.  Most often the comms key is used for creating keys for
+communications.  Most often the comms key is used for exchanging keys for
 block ciphers. That is, the comms key is used only for agreeing on the
 much faster block cipher key used during the rest of the communications
 session.</p>
@@ -118,7 +121,7 @@ xlReg server.</p>
 using protocols agreed-upon among themselves, but the xlReg registry
 has no knowledge of such protocols.</p>
 
-<p><strong>xlreg_j</strong> is currently in development.  This is not
+<p><strong>xlreg_java</strong> is currently in development.  This is not
 necessarily a description of running code; it is where we are going.</p>
 
 <p>xlReg is an <a href="http://jddixon.github.io/xlattice_go/">XLattice</a> project.  More
@@ -175,7 +178,7 @@ your own server.</p>
 <h2>Client Source Code</h2>
 
 <p>This is best obtained through
-<a href="https://github.com/jddixon/xlreg_j/">this client&rsquo;s Github project page</a>.</p>
+<a href="https://github.com/jddixon/xlreg_java/">this client&rsquo;s Github project page</a>.</p>
 
 <h2>Project Status</h2>
 
