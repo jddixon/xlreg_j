@@ -1,5 +1,8 @@
 xlreg_java/CHANGES
 
+v0.1.2
+    2015-06-19
+        * add Version.java; update README/index.md, .gitignore      SLOC  
 v0.1.1
     2015-04-18
         * change project name from _j to _java                      SLOC  531
