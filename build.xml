@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="test" name="xlreg_java" basedir=".">
   <property name="name"           value="xlReg"/>
-  <property name="version"        value="0.1.6"/>
+  <property name="version"        value="0.1.7"/>
   <!-- manual addition -->
-  <property name="versionDate"    value="2015-12-13"/>
+  <property name="version_date"    value="2015-12-14"/>
   <property name="project_name"    value="xlreg_java"/>
   <!-- ======================================================= -->
   <!-- S O U R C E   P R O P E R T I E S                       -->
@@ -47,10 +47,15 @@
                                                    depends="init">
     <mkdir dir="${classes_dir}"/>
     <javac destdir="${classes_dir}" deprecation="true"
-         debug="true" optimize="false" excludes="**/package.html">
+      debug="true" optimize="false" excludes="**/package.html">
       <src>
         <pathelement location="${src_dir}"/>
       </src>
+
+      <!-- RegCred.java NOT YET TRANSLATED FROM GO -->
+      <exclude name="**/RegCred.java"/>
+      <!-- END NOT YET -->
+
       <classpath>
         <fileset dir="${lib_dir}">
           <include name="**/*.jar"/>
@@ -236,4 +241,5 @@
     <delete dir="${dist_dir}"/>
   </target>
 </project>
+
 
