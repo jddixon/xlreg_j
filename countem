@@ -3,5 +3,6 @@
 pySloc -vC java:bash:txt  \
     bash:countem    \
     txt:p.proto     \
-    txt:testDataTestTemplate
+    txt:testDataTestTemplate    \
+    xml:build.xml
     
