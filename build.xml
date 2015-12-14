@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project default="test" name="xlreg_java" basedir=".">
-
   <property name="name"           value="xlReg"/>
-  <property name="version"        value="0.1.5"/>
+  <property name="version"        value="0.1.6"/>
   <!-- manual addition -->
-  <property name="versionDate"    value="2015-12-02"/>
-  <property name="projectName"    value="xlattice"/>
+  <property name="versionDate"    value="2015-12-13"/>
+  <property name="project_name"    value="xlreg_java"/>
   <!-- ======================================================= -->
   <!-- S O U R C E   P R O P E R T I E S                       -->
   <!-- ======================================================= -->
@@ -18,7 +16,6 @@
   <!-- B U I L D   P R O P E R T I E S                         -->
   <!-- ======================================================= -->
   <property name="build_dir" value="target"/>
-
   <property name="classes_dir"      value="${build_dir}/classes"/>
   <property name="lib_dir"          value="./lib"/>
   <property name="test_classes_dir" value="${build_dir}/test-classes"/>
@@ -33,7 +30,7 @@
   <property name="zip_dir"          value="distribution"/>
   <!-- where a clean set of files is collected before zipping -->
   <property name="dist_base"        value="dist-files"/>
-  <property name="dist_dir"         value="${dist_base}/${projectName}"/>
+  <property name="dist_dir"         value="${dist_base}/${project_name}"/>
   <property name="dist_lib"         value="${dist_dir}/lib"/>
   <property name="dist_name"        value="${name}-${version}"/>
   <!-- ======================================================= -->
@@ -43,7 +40,6 @@
                       description="o Initializes some properties">
     <mkdir dir="${lib_dir}"/>
   </target>
-
   <!-- ======================================================= -->
   <!-- C O M P I L E   S O U R C E   F I L E S                 -->
   <!-- ======================================================= -->
@@ -57,7 +53,7 @@
       </src>
       <classpath>
         <fileset dir="${lib_dir}">
-          <include name="**/*.jar"/>      
+          <include name="**/*.jar"/>
         </fileset>
       </classpath>
     </javac>
@@ -100,7 +96,6 @@
         <pathelement path="${test_classes_dir}"/>
         <pathelement path="${classes_dir}"/>
       </classpath>
-
       <batchtest todir="${test_report_dir}">
         <fileset dir="${test_src_dir}">
           <include name="**/Test*.java"/>
@@ -131,8 +126,8 @@
   <!-- ======================================================= -->
   <target name="install-jar"      description="o Copy jar to lib"
                                                     depends="jar">
-    <copy file="${build_dir}/${dist_name}.jar" 
-        todir="${lib_dir}/${projectName}"/>
+    <copy file="${build_dir}/${dist_name}.jar"
+        todir="${lib_dir}/${project_name}"/>
   </target>
   <!-- ======================================================= -->
   <!-- G E N E R A T E   J A V A D O C                         -->
@@ -164,7 +159,6 @@
     <mkdir  dir="${zip_dir}"/>
     <delete dir="${dist_dir}"/>
     <mkdir  dir="${dist_dir}/${component}"/>
-
     <!-- text files   -->
     <copy todir="${dist_dir}/${component}" >
       <fileset dir="${basedir}" includes="../LICENSE*, README*"/>
@@ -182,7 +176,6 @@
         <fileset dir="${lib_dir}/junit" includes="cpl-v10.html"/>
         <fileset dir="${lib_dir}/junit" includes="junit-4.1.jar"/>
     </copy>
-
     <!-- project control files -->
     <copy todir="${dist_dir}/${component}" file="../LICENSE.txt" />
     <copy todir="${dist_dir}/${component}" file="build.xml" />
@@ -215,23 +208,21 @@
       <fileset dir="${xdoc_dir}" includes="**/*.xml"/>
     </copy>
     -->
-
     <!--
     <tar longfile="gnu"
          destfile="${zip_dir}/${dist_name}.tar">
         <tarfileset dir="${dist_base}" mode="744">
-            <include name="${projectName}/${component}/build.sh" />
+            <include name="${project_name}/${component}/build.sh" />
         </tarfileset>
         <tarfileset dir="${dist_base}">
             <include name="**" />
-            <exclude name="${projectName}/${component}/build.sh" />
+            <exclude name="${project_name}/${component}/build.sh" />
         </tarfileset>
     </tar>
     <gzip zipfile="${zip_dir}/${dist_name}.tar.gz"
         src="${zip_dir}/${dist_name}.tar"/>
     <delete file="${zip_dir}/${dist_name}.tar"/>
     -->
-
     <zip destfile="${zip_dir}/${dist_name}.zip"
          basedir="${dist_base}"/>
   </target>
