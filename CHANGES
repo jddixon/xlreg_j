@@ -1,5 +1,8 @@
 xlreg_java/CHANGES
 
+v0.1.8
+    2015-12-15
+        * removing DecimalVersion and test                          SLOC  769
 v0.1.7
     2015-12-14
         * hacked up skeletal XLRegJClient                           SLOC  924
@@ -23,6 +26,7 @@ v0.1.1
         * change project name from _j to _java                      SLOC  531
 v0.1.0
     2012-12-25
+
 
 
 

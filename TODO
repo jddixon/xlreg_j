@@ -1,10 +1,19 @@
 xlreg_java/TODO
 
+2015-12-14
+    * move DecimalVersion and test to xlattice.util 
+        - first copy them over                                          * DONE
+        - then delete from this package
+    * integrate in commons CLI
+        - specifically -V/--showVersion code
+    * build.xml should check for more recent xlattice jars, copy them
+        over if found
+
 2015-06-19
-    * RegCred.java is just hackeed Go; get it running
+    * RegCred.java is just hacked Go; get it running
 
 2015-06-03
-    * git configuration data contains the old project naem, xlreg_j
+    * git configuration data contains the old project naem, xlreg_j     * FIXED
 
 2015-04-18
     * need to count build.xml
