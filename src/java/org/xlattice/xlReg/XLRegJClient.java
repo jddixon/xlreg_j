@@ -9,29 +9,36 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.nio.channels.ServerSocketChannel;
 
-import org.xlattice.Address;
-import org.xlattice.CryptoException;
-import org.xlattice.EndPoint;
-import org.xlattice.NodeID;
-import org.xlattice.Transport;
-import org.xlattice.corexml.CoreXmlException;
-import org.xlattice.corexml.bind.Mapping;
-import org.xlattice.corexml.om.Document;
-import org.xlattice.corexml.om.XmlParser;
-import org.xlattice.crypto.RSAKey;
-import org.xlattice.crypto.RSAPublicKey;
-import org.xlattice.crypto.SHA1Digest;
+import org.apache.commons.cli.DefaultParser;
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.HelpFormatter;
+import org.apache.commons.cli.Options;
+import org.apache.commons.cli.ParseException;
 
-import org.xlattice.node.Configurer;
-import org.xlattice.node.NodeConfig;
+// import org.xlattice.Address;
+// import org.xlattice.CryptoException;
+// import org.xlattice.EndPoint;
+// import org.xlattice.NodeID;
+// import org.xlattice.Transport;
+// import org.xlattice.corexml.CoreXmlException;
+// import org.xlattice.corexml.bind.Mapping;
+// import org.xlattice.corexml.om.Document;
+// import org.xlattice.corexml.om.XmlParser;
+// import org.xlattice.crypto.RSAKey;
+// import org.xlattice.crypto.RSAPublicKey;
+// import org.xlattice.crypto.SHA1Digest;
+
+// import org.xlattice.node.Configurer;
+// import org.xlattice.node.NodeConfig;
 // import org.xlattice.overlay.datakeyed.MemCache;
-import org.xlattice.transport.ClientServer;
-import org.xlattice.transport.IOScheduler;
-import org.xlattice.transport.IPAddress;
-import org.xlattice.transport.SchedulableAcceptor;
-import org.xlattice.transport.tcp.Tcp;
-import org.xlattice.util.NonBlockingLog;
-import org.xlattice.util.Timestamp;
+// import org.xlattice.transport.ClientServer;
+// import org.xlattice.transport.IOScheduler;
+// import org.xlattice.transport.IPAddress;
+// import org.xlattice.transport.SchedulableAcceptor;
+// import org.xlattice.transport.tcp.Tcp;
+// import org.xlattice.util.NonBlockingLog;
+// import org.xlattice.util.Timestamp;
 
 /**
  * @author Jim Dixon
@@ -43,14 +50,14 @@ public class XLRegJClient implements Runnable {
     private static String clientVersion;
     
     // PRIVATE MEMBERS //////////////////////////////////////////////
-    protected final NonBlockingLog debugLog;
+    // protected final NonBlockingLog debugLog;
 
-    private RSAPublicKey masterPubKey;
+    // private RSAPublicKey masterPubKey;
     
     public final static String BASE_DIR_NAME = "./";
-    protected SchedulableAcceptor   acc;
+    // protected SchedulableAcceptor   acc;
 
-    protected IOScheduler scheduler;
+    // protected IOScheduler scheduler;
 
     //private   Name2Hash name2Hash = Name2Hash.getInstance();
     //private   MemCache  memCache  = MemCache.getInstance();
@@ -58,12 +65,12 @@ public class XLRegJClient implements Runnable {
     private   String    sitesDirName;
 
     public XLRegJClient () {
-        debugLog = NonBlockingLog.getInstance("debug.log");
+        // debugLog = NonBlockingLog.getInstance("debug.log");
     }
     // LOGGING //////////////////////////////////////////////////////
-    protected void DEBUG_MSG(String msg) {
-        debugLog.message("XLRegJClient" + msg);
-    }
+    // protected void DEBUG_MSG(String msg) {
+    //     debugLog.message("XLRegJClient" + msg);
+    // }
     // INTERFACE Runnable ///////////////////////////////////////////
     /**
      * Start the server running.  Exceptions encountered are all
@@ -73,51 +80,37 @@ public class XLRegJClient implements Runnable {
         // HttpSListener.setServerName(clientVersion);
         
         // DIRECTORY STRUCTURE ////////////////////////////
-        String nodeDirName    = "xlattice" + File.separator;
-        String overlayDirName = nodeDirName + "overlays" + File.separator;
-        String httpdDirName   = overlayDirName + "httpd" + File.separator;
-        String buildDirName   = httpdDirName + "builds" + File.separator;
-        String logDirName     = httpdDirName + "log" + File.separator;
-        checkDir(logDirName);
+        // String nodeDirName    = "xlattice" + File.separator;
+        // String overlayDirName = nodeDirName + "overlays" + File.separator;
+        // String httpdDirName   = overlayDirName + "httpd" + File.separator;
+        // String buildDirName   = httpdDirName + "builds" + File.separator;
+        // String logDirName     = httpdDirName + "log" + File.separator;
+        // checkDir(logDirName);
        
         // NODE ///////////////////////////////////////////
-        File nodeCfg        = checkFile(nodeDirName + "xlattice.xml");
-        FileReader ncReader = null;
-        NodeConfig nc       = null;
-        try {
-            ncReader = new FileReader(nodeCfg);
-            Mapping ncMap = Configurer.buildMapping();
-            Document doc  =  new XmlParser (ncReader).read();
-            nc = (NodeConfig)ncMap.apply(doc);
-        } catch (FileNotFoundException fnfe) {
-            throw new IllegalStateException ("cannot find xlattice.xml");
-        } catch (IOException ioe) {
-            throw new IllegalStateException (
-                    "problem reading xlattice.xml: " + ioe);
-        } catch (CoreXmlException cxe ) {
-            throw new IllegalStateException (
-                    "problem parsing xlattice.xml: " + cxe);
-        }
-        NodeID nodeID = nc.getNodeID();
+        // File nodeCfg        = checkFile(nodeDirName + "xlattice.xml");
+        // FileReader ncReader = null;
+        // NodeConfig nc       = null;
+        // try {
+        //     ncReader = new FileReader(nodeCfg);
+        //     Mapping ncMap = Configurer.buildMapping();
+        //     Document doc  =  new XmlParser (ncReader).read();
+        //     nc = (NodeConfig)ncMap.apply(doc);
+        // } catch (FileNotFoundException fnfe) {
+        //     throw new IllegalStateException ("cannot find xlattice.xml");
+        // } catch (IOException ioe) {
+        //     throw new IllegalStateException (
+        //             "problem reading xlattice.xml: " + ioe);
+        // } catch (CoreXmlException cxe ) {
+        //     throw new IllegalStateException (
+        //             "problem parsing xlattice.xml: " + cxe);
+        // }
+        // NodeID nodeID = nc.getNodeID();
 
-        // HTTPD.CFG //////////////////////////////////////
-        // STUB: skipping for now
-
-        // DISK CACHE INITIALIZATION //////////////////////
-        // DiskCache diskCache = DiskCache.getInstance();
-        // diskCache.init();
-        
-        // LOAD Name2Hash, GET SITE LIST //////////////////
-        // SiteList siteList = name2Hash.loadFromNodeDir(nodeDirName);
-        // if (siteList == null)
-        //     throw new IllegalStateException("null site list");
-        // masterPubKey = siteList.getPublicKey();     // XXX KLUDGE
-        // int siteCount = siteList.size();
 
         // BANNER /////////////////////////////////////////
         StringBuffer sb = new StringBuffer("\n")
-                    .append(clientVersion)
-                    .append(" running ");
+                    .append(clientVersion);
         //for (int i = 0; i < siteCount; i++) {
         //    if (i > 0) 
         //        sb.append(", ");
@@ -132,29 +125,29 @@ public class XLRegJClient implements Runnable {
         //  .append(name2Hash.size());
         String banner = sb.toString();        
         System.out.println(banner); 
-        DEBUG_MSG(banner);
+        // DEBUG_MSG(banner);
 
         // START SCHEDULER ////////////////////////////////
-        DEBUG_MSG(" starting scheduler");
-        try {
-            scheduler = new IOScheduler();
-        } catch (IOException ioe) {
-            throw new IllegalStateException(
-                                "can't create IOScheduler: " + ioe);
-        }
-        boolean schedulerRunning = false;
-        while (!schedulerRunning) {
-            try {
-                Thread.currentThread().sleep(10);   // ms
-            } catch (InterruptedException ie) { /* ignore */ }
-            schedulerRunning = scheduler.isRunning();
-        }
+        // DEBUG_MSG(" starting scheduler");
+        // try {
+        //     scheduler = new IOScheduler();
+        // } catch (IOException ioe) {
+        //     throw new IllegalStateException(
+        //                         "can't create IOScheduler: " + ioe);
+        // }
+        // boolean schedulerRunning = false;
+        // while (!schedulerRunning) {
+        //     try {
+        //         Thread.currentThread().sleep(10);   // ms
+        //     } catch (InterruptedException ie) { /* ignore */ }
+        //     schedulerRunning = scheduler.isRunning();
+        // }
 
         // START SERVERS //////////////////////////////////
-        Class       protocol;
-        int         serverPort = 80;                // default
+        // Class       protocol;
+        // int         serverPort = 80;                // default
         // protocol   = Tcp.class; 2011-08-23 fix
-        Transport transport = new Tcp();
+        // Transport transport = new Tcp();
         // for (int i = 0; i < siteCount; i++) {
         //     String domainName = siteList.toString(i);// XXX CHANGING INTERFACE
         //     InetAddress hostIP;
@@ -201,16 +194,16 @@ public class XLRegJClient implements Runnable {
     }
 
     public void close()                     throws IOException {
-        acc.close();
-        try { scheduler.close(); } catch (Exception e) { /* ignore */ }
-        Thread schedThread = scheduler.getThread();
-        if (schedThread.isAlive()) {
-            try {
-                schedThread.join();
-            } catch (InterruptedException ie) { 
-                /* ignore for now */ 
-            }
-        }
+        // acc.close();
+        // try { scheduler.close(); } catch (Exception e) { /* ignore */ }
+        // Thread schedThread = scheduler.getThread();
+        // if (schedThread.isAlive()) {
+        //     try {
+        //         schedThread.join();
+        //     } catch (InterruptedException ie) { 
+        //         /* ignore for now */ 
+        //     }
+        // }
     }
     /**
      * Verify that a directory exists and is in fact a directory.
@@ -261,9 +254,12 @@ public class XLRegJClient implements Runnable {
             sb.append(" build ").append(build);
         clientVersion = sb.toString();
 
+        // DEBUG
+        System.out.printf("XLJRegClient %s\n", clientVersion);
+        // END
 
         XLRegJClient instance = new XLRegJClient();
-        Thread server = new Thread (instance);
-        server.start();
+        Thread client = new Thread (instance);
+        client.start();
     }
 }
