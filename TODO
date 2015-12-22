@@ -2,6 +2,7 @@ xlreg_java/TODO
 
 2015-12-17
     * xlRegJClient.sh as showVersion simply displays current version    * DONE
+    * commons.cli has a longOpt
 
 2015-12-17 (edited from -14)
     * task in build.xml should check for more recent xlattice jars, 

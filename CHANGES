@@ -1,8 +1,11 @@
 xlreg_java/CHANGES
 
+v0.1.10
+    2015-12-22
+        * fix dead link
 v0.1.9
     2015-12-17
-        * xlRegJClient = showVersion does just that
+        * xlRegJClient = showVersion does just that                 SLOC  882
 0.1.8
     2015-12-15
         * removing DecimalVersion and test                          SLOC  769
@@ -29,6 +32,7 @@ v0.1.1
         * change project name from _j to _java                      SLOC  531
 v0.1.0
     2012-12-25
+
 
 
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="test" name="xlreg_java" basedir=".">
   <property name="name"           value="xlReg"/>
-  <property name="version"        value="0.1.9"/>
+  <property name="version"        value="0.1.10"/>
   <!-- manual addition -->
-  <property name="versionDate"    value="2015-12-17"/>
+  <property name="versionDate"    value="2015-12-22"/>
   <property name="project_name"    value="xlreg_java"/>
   <!-- ======================================================= -->
   <!-- S O U R C E   P R O P E R T I E S                       -->
