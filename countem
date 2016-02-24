@@ -1,8 +1,10 @@
-# xlattice_java/countem
-# 
-pySloc -vC java:bash:txt  \
-    bash:countem    \
-    txt:p.proto     \
-    txt:testDataTestTemplate    \
-    xml:build.xml
-    
+cd ~/dev/java/xlreg_java
+
+pySloc -v -X "\.bak$\\.go$|^lib$|^target$|^testData"  $@   \
+    bash:countem xlRegJClient.sh        \
+    not#:p.proto                        \
+    not#:testDataTestTemplate           \
+    xml:build.xml                       \
+
+
+

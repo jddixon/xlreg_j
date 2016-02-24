@@ -1,23 +1,31 @@
 xlreg_java/TODO
 
+2015-12-17
+    * xlRegJClient.sh as showVersion simply displays current version    * DONE
+    * commons.cli has a longOpt
+
+2015-12-17 (edited from -14)
+    * task in build.xml should check for more recent xlattice jars, 
+        copy them over if found
+    * alternative is to do this with a Python script
+
 2015-12-14
     * move DecimalVersion and test to xlattice.util 
         - first copy them over                                          * DONE
-        - then delete from this package
+        - then delete from this package                                 * DONE
     * integrate in commons CLI
         - specifically -V/--showVersion code
-    * build.xml should check for more recent xlattice jars, copy them
-        over if found
 
 2015-06-19
     * RegCred.java is just hacked Go; get it running
 
 2015-06-03
-    * git configuration data contains the old project naem, xlreg_j     * FIXED
+    * git configuration data contains the old project name, xlreg_j     * FIXED
 
 2015-04-18
-    * need to count build.xml
-    * ... and to extract the version from in 
+    * need to count build.xml                                           * DONE
+    * ... and to extract the version from it                            * DONE
+    :wq
 2014-02-09
     * https://www.bouncycastle.org/wiki/display/JA1/Provider+Installation
 
