@@ -1,0 +1,3 @@
+code:local:p.proto
+txt:local:testDataTestTemplate
+bash:local:xlRegJClient.sh

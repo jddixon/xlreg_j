@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="test" name="xlreg_java" basedir=".">
   <property name="name"           value="xlReg"/>
-  <property name="version"        value="0.1.12"/>
-  <!-- manual addition -->
-  <property name="versionDate"    value="2016-02-24"/>
-  <property name="project_name"    value="xlreg_java"/>
+  <property name="version"        value="0.1.13"/>
+  <property name="versionDate"    value="2016-06-12"/>
+  <property name="project_name"   value="xlattice"/>
   <!-- ======================================================= -->
   <!-- S O U R C E   P R O P E R T I E S                       -->
   <!-- ======================================================= -->
@@ -239,6 +238,7 @@
     <delete dir="${dist_dir}"/>
   </target>
 </project>
+
 
 
 

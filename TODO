@@ -1,5 +1,9 @@
 xlreg_java/TODO
 
+2016-06-12
+    * RegCred.java is NOT JAVA; it's Go with some hacks towards Java
+        Fix it!
+
 2015-12-17
     * xlRegJClient.sh as showVersion simply displays current version    * DONE
     * commons.cli has a longOpt
