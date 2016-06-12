@@ -1,5 +1,11 @@
 xlreg_java/CHANGES
 
+v0.1.13
+    2016-06-12
+        * fix build.xml etc; add bkp2U, other bash scripts          SLOC 1099
+v0.1.11
+    2016-02-24
+        * fix countem, update LICENSE                               SLOC  619
 v0.1.10
     2015-12-22
         * fix dead link
@@ -32,6 +38,9 @@ v0.1.1
         * change project name from _j to _java                      SLOC  531
 v0.1.0
     2012-12-25
+
+
+
 
 
 

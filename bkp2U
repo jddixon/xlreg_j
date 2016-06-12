@@ -4,8 +4,13 @@ if [ ! -z "${DEV_BASE// }" ]
 then
   cd $DEV_BASE/java/xlreg_java
   
+  blListGen \
+    -d ../xlreg_java \
+    -1L  \
+    -u $DVCZ_UDIR \
+    -X .ssh \
+    $@
   
-  pySloc -L java  -X target -v $@
 else
   echo "DEV_BASE is not defined"
 fi

@@ -4,8 +4,8 @@ if [ ! -z "${DEV_BASE// }" ]
 then
   cd $DEV_BASE/java/xlreg_java
   
+  echo "DON'T KNOW HOW TO STYLE JAVA YET"
   
-  pySloc -L java  -X target -v $@
 else
   echo "DEV_BASE is not defined"
 fi
