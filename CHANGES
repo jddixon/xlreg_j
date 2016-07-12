@@ -1,5 +1,8 @@
 xlreg_java/CHANGES
 
+v0.1.14
+    2016-07-12
+        * add ghpDoc/{css,img}                                      SLOC 1651
 v0.1.13
     2016-06-12
         * fix build.xml etc; add bkp2U, other bash scripts          SLOC 1099
@@ -48,7 +51,5 @@ v0.1.0
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> devel
+

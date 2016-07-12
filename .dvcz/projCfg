@@ -8,15 +8,16 @@ versionDate:
 dir:std:ghpDoc
 dir:std:.dvcz
 dir:pkg:xlreg_java
-dir:local:img
 dir:local:lib
 dir:local:src
 dir:local:testData
+dir:local:xdocs
 :?files?:
 code:std:.dvcz/projCfg
 code:std:.dvcz/projCfg.local
 code:std:.dvcz/builds
 code:std:.dvcz/lastBuildList
+code:std:.dvcz/version
 code:std:.dvczignore
 code:std:.dvczignore.local
 code:std:.gitignore

@@ -7,35 +7,45 @@ zPjEShF9rvcNa9XEy1dKpcDz9Szbm2SlxOgM83fDDGtOq4SSCSqndtxrOvXXPB57
 H1mJV/FmerbXRPm5ERJVNIxtLk7Gr2Ce45FVlWyJGMhpfVlKkkk+bRQ02OFfazJI
 GQIDAQAB
 -----END RSA PUBLIC KEY-----
-xlreg_java v0.1.13
-2016-06-12 21:26:58
+xlreg_java v0.1.14
+2016-07-12 18:46:35
 # START CONTENT #
 xlreg_java
  .copyright 24cbd8ef68b6c21346d9ae639a2ed45cde66494a
  .dvcz
-  projCfg 4cb3008a7f6059dc7b7121ed43390f8a953f7528
+  builds fec74cabc25f8c7c5491c55e840411ca7bb71de7
+  lastBuildList 77483a192a67b8b1d78c4ec5ccea9be487758b37
+  projCfg 29e3fc802bc14d6383f49514836eb69cba2d2049
   projCfg.local 1518e546c8ea07966997edbef79d0464ed3ee870
-  version 17850f4c52ba59c08a85fbc38b405b06a3a407ed
+  version 9a94e7bd530d7c8de7d3d83aee20ab03d44a3c58
  .gitignore 73b879f8842850058bca4519cca9b24d39bcf052
- CHANGES 49f7832c7af43e0d7afe365f7561d8de9f2f87eb
+ CHANGES 99c1dac9017cfccd0584258f87354494d516507f
+ LICENSE.html 4d0038a843d3f3e0553fca7df2c17ad053916e5d
  LICENSE.md 0aa3c5fce2ab3f16c4a5be4b269d54dd4e609952
  README.md 40c91ebea43375d51f9f06cbd00a757aa488dd6a
  TODO 6b86433e47cdd0c67bd9ed4d2cb8d5fb7aa2583d
  bkp2U c6260f17d436af7605e0b4925c2c24759c68e907
  build.sh 8844d742637d7668927c8c39cc2fba6e6b8736d7
- build.xml 90e8ae55aa2a31f608f726631ff1de508f6c3c59
+ build.xml 9787a8cfadc4b1a0cb0a95dc91982f1e185ccfa2
  classpath.sh 76a2ec0287f67fe1074714657aa637f2f706576f
  countem d8eb0f7a7ef34e9da498f2ae4cf39610d07a6c99
  ghpDoc
   TODO 6ea850e6630a0c04783b815ca812ca82739721e8
+  css
+   LICENSE.html5-boilerplate.md ded771b3245b190da0e81c76de5a80d41392c0a6
+   ghp.css 1d6ebe8a6cf8f61f4645a793cb087dfae2420f33
+   main.css 018ed80b8a6e6607bc7c08595fa5a7fa56853885
+   normalize.css cba40c7ce3d558d00ff79d7505ac3d348015ec9c
+  img
+   GitHub-Mark-32px.png fabe53eb72f9b6d3d47cd95aff31ffc45c2fdbf8
+   chunk.jpg de2b27e41f1547fc14b13399f5906b4303b49657
+   chunk2.jpg d0593d312dbb8ea837c17b28cb639726e29ea93b
+   cluster-with-clients.jpg c167d04c0c6b5736ef9fe4cdc3fcce1956fdea78
+   simple-cluster.jpg 6b223ddd25937c1ef75ef328f36fc3436f10bd62
+   xl-registration.jpg 15cbf951f9db173a45428b32dcec87aca83bbdf0
+   xlattice-2014.jpg f185aaad06db71acd9454f31054c62c56d36f37f
+   xlattice.batik.jpg debe9220564203118dc53df0f5a48d77669fe367
   index.md cd0983b5f708f8a1e91176adbec59e68f5d9580a
- img
-  GitHub-Mark-32px.png fabe53eb72f9b6d3d47cd95aff31ffc45c2fdbf8
-  cluster-with-clients.jpg c167d04c0c6b5736ef9fe4cdc3fcce1956fdea78
-  simple-cluster.jpg 6b223ddd25937c1ef75ef328f36fc3436f10bd62
-  xl-registration.jpg 15cbf951f9db173a45428b32dcec87aca83bbdf0
-  xlattice-2014.jpg f185aaad06db71acd9454f31054c62c56d36f37f
-  xlattice.batik.jpg debe9220564203118dc53df0f5a48d77669fe367
  installit a45fe622cdaea810e668e07bb5cc01c82ca619a2
  lib
   ant
@@ -62,6 +72,7 @@ xlreg_java
    transport-0.2.1.jar 781d547b2da1eabd603fac28aa808bcc45b1107e
    util-0.3.14.jar 3ef6c9e9d95e03b954cfe1d869fd8406a83604e4
    xlReg-0.1.13.jar 3ccafc9fa400c28136f766a48b9be93ef61616b2
+   xlReg-0.1.14.jar 353a824365db8c1dac49b81c761e3e3c315d115e
   xlreg_java
    xlReg-0.1.7.jar 94f01627b465d8bafd6bfef04f1da69eb91fa5d2
  p.proto 6c50df9c67a7adf8af8ff8435d5eeab311962867
@@ -72,7 +83,7 @@ xlreg_java
      xlReg
       HelloAndReply.java 24919840b7bd0df6ba84c800d98469451cd99e20
       RegCred.java 9d86d3d3b3e3cf31aeb98537a1005e1f04e866bd
-      Version.java d4ba24d0177d502d1fa88fb058d5af86e939dd6d
+      Version.java fc25c76f14d3a5bbc15b8a3158278966b965ea0b
       XLRegErrors.java 374340c902e3b88f769b8dc13a106a3f0ec99e1d
       XLRegJClient.java 337c813d1c5cfb6394d9e356fe5b628284733efd
       XLRegProtos.java 8b05e8fc74305673a118081469166e4789e08481
@@ -119,4 +130,4 @@ xlreg_java
  xlRegJClient.sh 419ea25c13e27590076434770cd974805fa391f8
 # END CONTENT #
 
-XsUUsCY2x/ih9lJSsvXQhozgWoKJtDfZKqJto55SmowbstL7exZb1ocAHfzX5gcNSbqcMVoTDEpeOeIXdqM2m6TI7FzwYzX5+Y4VFDTN1g+CMCfMWgfsXX851PBGuxgd+4E3RUbb6bDyuaKiFj89tH3DcGbgUkOuRoGVappaqAi00ZkEMAajKStHoPUJcKxZTBmlg3C+iXVsl0t7qgrV+/4xJDP0H6rJhfDpZgL4yigyYDzLYQ/hsepTKZYG48maF3jnao//9t7yb5nTe0hPdwIaLxrMP2Pti+MgjERGZNGcYoYAWoq4FaGbk4xx5jYYBOviv5VFUd19VA0R/jOF4g==
+WnqZFyLIXQq5Z7fKByzA6ZUVKS5E0E5x97TkWk8ySgIcLB9tBt+ow3xTTlUMDdZ8+7hR/d/wD+I0CNbGVcWzPxG/qsawcIUcEF+mI5UPCvdJhwhIH33XB3tyguh/3GiJW0/ubwz/arhHmmv6IYqsaGxX2+pL2MN31aNdnzZjj5k7IpKzB0hMnHvJELXyp1dlig0HnVfSUVTw2NMQkpzSimkFfJEkqhfTph7QjFYWWVNoV9kiY68iM1NxT4QQjLmyxMNz12+869ksqdI6SgkIels5HzFXspnWr+7MyimFOwW2wVXtoU2mwy22KJIt0WCIWhSwt4CkuCq9N25gh4sqEA==
