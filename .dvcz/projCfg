@@ -25,9 +25,8 @@ code:std:.gitignore.local
 code:std:/var/app/sharedev/config/projCfg
 code:std:project.properties
 code:local:p.proto
-txt:std:.copyright
+txt:std:LICENSE-XLATTICE.md
 txt:std:CHANGES
-txt:std:LICENSE.md
 txt:std:README.md
 txt:std:TODO
 txt:local:testDataTestTemplate
