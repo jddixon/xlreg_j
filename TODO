@@ -1,5 +1,8 @@
 xlreg_java/TODO
 
+2016-07-12
+    * LICENSE.html should not be present or should be the MIT license
+
 2016-06-12
     * RegCred.java is NOT JAVA; it's Go with some hacks towards Java
         Fix it!

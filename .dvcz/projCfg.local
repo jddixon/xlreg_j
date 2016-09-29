@@ -1,3 +1,5 @@
+txt:std:LICENSE-XLATTICE.md
+
 code:local:p.proto
 txt:local:testDataTestTemplate
 bash:local:xlRegJClient.sh

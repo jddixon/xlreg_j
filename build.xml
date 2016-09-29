@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="test" name="xlreg_java" basedir=".">
   <property name="name"           value="xlReg"/>
-  <property name="version"        value="0.1.13"/>
-  <property name="versionDate"    value="2016-06-12"/>
+  <property name="version"        value="0.1.15"/>
+  <property name="versionDate"    value="2016-09-29"/>
   <property name="project_name"   value="xlattice"/>
   <!-- ======================================================= -->
   <!-- S O U R C E   P R O P E R T I E S                       -->
@@ -179,10 +179,12 @@
         <fileset dir="${lib_dir}/junit" includes="junit-4.1.jar"/>
     </copy>
     <!-- project control files -->
-    <copy todir="${dist_dir}/${component}" file="../LICENSE.txt" />
+    <copy todir="${dist_dir}/${component}" file="${root_dir}/LICENSE-XLATTICE.html" />
     <copy todir="${dist_dir}/${component}" file="build.xml" />
+    <!-- KLUDGE
     <copy todir="${dist_dir}/${component}" file="project.properties" />
     <copy todir="${dist_dir}/${component}" file="project.xml" />
+    -->
     <!--
     <exec executable="cp">
       <arg value="build.sh"/>
@@ -238,6 +240,8 @@
     <delete dir="${dist_dir}"/>
   </target>
 </project>
+
+
 
 
 
