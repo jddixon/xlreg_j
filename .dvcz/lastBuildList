@@ -1,4 +1,4 @@
------BEGIN RSA PUBLIC KEY-----
+-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoM2sBgX0ChP2JriXkOxS
 e2FjHYVzBGkNvgf0vIAa7FFYZi2pWmxBAVXgl3tTiB3quqqud/MbKqdejM6gkKBK
 v8f7hlcBQLD6BLIZ/RRfhIElc+WlDVfKSnBTB4va5qTQAgvuq5i8+oMj7G8WEy5d
@@ -6,28 +6,28 @@ v8f7hlcBQLD6BLIZ/RRfhIElc+WlDVfKSnBTB4va5qTQAgvuq5i8+oMj7G8WEy5d
 zPjEShF9rvcNa9XEy1dKpcDz9Szbm2SlxOgM83fDDGtOq4SSCSqndtxrOvXXPB57
 H1mJV/FmerbXRPm5ERJVNIxtLk7Gr2Ce45FVlWyJGMhpfVlKkkk+bRQ02OFfazJI
 GQIDAQAB
------END RSA PUBLIC KEY-----
-xlreg_java v0.1.15
-2016-09-29 17:04:59
+-----END PUBLIC KEY-----
+xlreg_java v0.1.16
+2016-11-15 19:18:24
 # BEGIN CONTENT #
 xlreg_java
  .dvcz
-  builds 125ec3c9d8a0509263aefbe604655635708f89bc
+  builds c2523a497487f63e11144e5b7c6d845abaf597da
   copyright fdc6cab0fd7077cddba743c357a0e48e7179c181
-  lastBuildList acd5b04f602d677ceca0208790f2ecdfdc6df714
+  lastBuildList 352db52b39458038b83ecf0c3bf4726a5886ce12
   license 31158001bd41a34771e96dad11a089f4863dea28
   projCfg 1ea73c82c4b46dc0e0b754b4971860968fee6155
   projCfg.local 2fefbef60b5fc31aa4dc506d939ce3ea9cea3bc2
-  version 739301760cbd1d9fa85f93d42cbd531cc5460151
+  version fe25ad292bed8f02e255499fa8afc9369f81c712
  .gitignore 73b879f8842850058bca4519cca9b24d39bcf052
- CHANGES ed917f8fcca88284e0ae9fbf514fa9fbe7cf9ddf
+ CHANGES d497dad1b1531df6c70a9227141fded532b87393
  LICENSE-XLATTICE.html db61c19b9e668d625d8767cd0a5325aa04111336
  LICENSE-XLATTICE.md bee3a87aa2ec7180859e80c7d7e6167a9c60a26a
- README.md 40c91ebea43375d51f9f06cbd00a757aa488dd6a
+ README.md 29c73d4291abcfffb61e7019062a5d88ba1d0efb
  TODO 4a309598aa61f16937adaa186d47ae80d9e204ff
- bkp2U c6260f17d436af7605e0b4925c2c24759c68e907
+ bkp2U 6c2d9f26c8376d146ef8fbc173dbcad9ae757169
  build.sh 8844d742637d7668927c8c39cc2fba6e6b8736d7
- build.xml c84163ec888998add63cd50c1bfa5c3d1221578e
+ build.xml 7c0d9c607ec075c94188c230560debb38489af2d
  classpath.sh 76a2ec0287f67fe1074714657aa637f2f706576f
  countem 7ae3655b4363e3a741e95e55eac755def9ed02f5
  ghpDoc
@@ -46,7 +46,7 @@ xlreg_java
    xl-registration.jpg 15cbf951f9db173a45428b32dcec87aca83bbdf0
    xlattice-2014.jpg f185aaad06db71acd9454f31054c62c56d36f37f
    xlattice.batik.jpg debe9220564203118dc53df0f5a48d77669fe367
-  index.md cd0983b5f708f8a1e91176adbec59e68f5d9580a
+  index.md 6b8c43483f23f555278640c00e2819b33fdfa142
  installit a45fe622cdaea810e668e07bb5cc01c82ca619a2
  lib
   ant
@@ -75,6 +75,7 @@ xlreg_java
    xlReg-0.1.13.jar 3ccafc9fa400c28136f766a48b9be93ef61616b2
    xlReg-0.1.14.jar 353a824365db8c1dac49b81c761e3e3c315d115e
    xlReg-0.1.15.jar 9c79d8abb0761db577b28e371b8eb503ac06c44d
+   xlReg-0.1.16.jar 76960e822d64a5a889d74a9a3a6e16ee9a37ba72
   xlreg_java
    xlReg-0.1.7.jar 94f01627b465d8bafd6bfef04f1da69eb91fa5d2
  p.proto 6c50df9c67a7adf8af8ff8435d5eeab311962867
@@ -85,7 +86,7 @@ xlreg_java
      xlReg
       HelloAndReply.java 24919840b7bd0df6ba84c800d98469451cd99e20
       RegCred.java 9d86d3d3b3e3cf31aeb98537a1005e1f04e866bd
-      Version.java 4191e4051ca149e521d113fc1b548814b8ce40e2
+      Version.java dfa9224fd9ecee752ce816f645eac6f0ffbbb085
       XLRegErrors.java 374340c902e3b88f769b8dc13a106a3f0ec99e1d
       XLRegJClient.java 337c813d1c5cfb6394d9e356fe5b628284733efd
       XLRegProtos.java 8b05e8fc74305673a118081469166e4789e08481
@@ -132,4 +133,4 @@ xlreg_java
  xlRegJClient.sh 419ea25c13e27590076434770cd974805fa391f8
 # END CONTENT #
 
-RHJiAN6BYLRZl5B8LukUth5LAhX9bPdjSvAmPBKKfZSlvlVL69A88LOLwOb/Q3F7QrhzIEzTvRHDl0nLr6CqfxVUGzoe2AJf7oK9KiKdau+L8kXFeH3t2DaH0CFgtV9C28FKKx8diIYlnHey7eiqyyPOWhDrBdWT3Eem2qYYJPXVYVLx8fuGZS/DDSUrPhpbN8xQkILErfybiBbdz6aXN79rP6ExtSsotugvfMtAVKMTa6aaeqr5v6pefizNWdNilXoYT/f5bYV28VxskPSOyvhjTIffwyOKLhQaRAL1sHWvCfS0xw5ocw0UKV5B3BjmO90jbzxJp58JNJTLxDbwdg==
+aT5NmQlnR/F6FDG6HX54P4EE2RawS625/T6+zkNMpZ8zCELEqd9EHhspvhFaVe4OnowBXwSJLTak3RQc+ymTsy2SvDivoBA5eliTcqX+z5dVubwZwRs6ljX9Ffr/ZiavoYlB2Or91JaV+lDc2eBFoJy3fI1WVdDaQgAY0/8HSztUCMYqVYwmjOZty/PMbSgFQs6MmOTcKdxQgiXQJxMQ5PSrUHP+d5CkoGWnJ7q3LudV46/QHGo2YXRnE3YuGQsaMMCM0dl4S8tI0DEQdSp4GT8EB1fCASz+GGgnHkVLgHaZNlBlpYALHl72EcTKDDEtUIOExDWXq7xWqgwEDMSznw==

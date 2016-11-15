@@ -4,7 +4,7 @@ if [ ! -z "${DEV_BASE// }" ]
 then
   cd $DEV_BASE/java/xlreg_java
   
-  blListGen \
+  bl_listgen \
     -d ../xlreg_java \
     -1L  \
     -u $DVCZ_UDIR \
